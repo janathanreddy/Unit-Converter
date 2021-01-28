@@ -567,6 +567,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="FeetChange:" destination="jZ2-53-uiy" eventType="editingChanged" id="rMa-7S-pDG"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DuB-r0-Y9E">
                                         <rect key="frame" x="8" y="417" width="358" height="55"/>
@@ -576,6 +579,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="MileChange:" destination="jZ2-53-uiy" eventType="editingChanged" id="9Vd-73-oEy"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metre Per Sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mk-0Q-cDC">
                                         <rect key="frame" x="8" y="8" width="358" height="31"/>
@@ -595,6 +601,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="MeterChange:" destination="jZ2-53-uiy" eventType="editingChanged" id="QCA-pC-m6j"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feet Per Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UC-rN-11U">
                                         <rect key="frame" x="8" y="127" width="358" height="31"/>
@@ -614,6 +623,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="KilometerChange:" destination="jZ2-53-uiy" eventType="editingChanged" id="4lb-be-awW"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilometre Per Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USm-dR-6By">
                                         <rect key="frame" x="8" y="248" width="358" height="31"/>
@@ -689,6 +701,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speed" image="speedometer" catalog="system" id="SLq-mQ-XsO"/>
+                    <connections>
+                        <outlet property="FeetperMin" destination="kJA-TJ-mHp" id="Tlo-F9-vY9"/>
+                        <outlet property="KilometrePerHour" destination="BGV-Hd-SXJ" id="nSQ-ti-hjU"/>
+                        <outlet property="MetrePerSec" destination="hvQ-mB-rAC" id="jzy-Kf-bbJ"/>
+                        <outlet property="MilePerHour" destination="DuB-r0-Y9E" id="HUZ-3t-Kmi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRC-MN-TTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
