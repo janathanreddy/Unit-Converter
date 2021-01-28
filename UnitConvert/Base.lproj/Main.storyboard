@@ -233,6 +233,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="FahrenheitChange:" destination="W99-9a-CFW" eventType="editingDidEnd" id="SCO-Sl-KNi"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZg-3m-CfI">
                                         <rect key="frame" x="8" y="8" width="358" height="31"/>
@@ -252,6 +255,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="CelsiusChange:" destination="W99-9a-CFW" eventType="editingChanged" id="iAd-Le-A4J"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtc-At-aYX">
                                         <rect key="frame" x="8" y="127" width="358" height="31"/>
@@ -281,6 +287,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="KelvinChange:" destination="W99-9a-CFW" eventType="editingDidEnd" id="RMN-7d-6Aa"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -322,6 +331,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Temperature" image="thermometer.sun.fill" catalog="system" id="L1E-4w-CTJ"/>
+                    <connections>
+                        <outlet property="CelsiusText" destination="jg9-cf-I3C" id="s1C-Yr-t92"/>
+                        <outlet property="FahrenheitText" destination="QzM-Wx-jsR" id="qxH-Im-mje"/>
+                        <outlet property="KelvinText" destination="6wr-QE-HZq" id="Ju9-EN-SQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IG7-mb-aMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
