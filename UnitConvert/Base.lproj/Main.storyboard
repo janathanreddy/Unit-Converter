@@ -373,6 +373,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="FootChange:" destination="KOx-u9-CrV" eventType="editingChanged" id="ySx-lj-oaL"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PPP-D5-Kks">
                                         <rect key="frame" x="8" y="417" width="358" height="55"/>
@@ -382,6 +385,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="KilometreChange:" destination="KOx-u9-CrV" eventType="editingChanged" id="D9g-sg-iru"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bek-Vp-4Y7">
                                         <rect key="frame" x="8" y="8" width="358" height="31"/>
@@ -401,6 +407,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="MetreChange:" destination="KOx-u9-CrV" eventType="editingChanged" id="Xxl-Jb-d99"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqv-QT-Z6b">
                                         <rect key="frame" x="8" y="127" width="358" height="31"/>
@@ -420,6 +429,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="YardChanged:" destination="KOx-u9-CrV" eventType="editingDidEnd" id="xHF-4y-JsL"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-w2-nsw">
                                         <rect key="frame" x="8" y="248" width="358" height="31"/>
@@ -449,6 +461,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="MileChange:" destination="KOx-u9-CrV" eventType="editingDidEnd" id="IyD-qo-tg9"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwW-m7-Ixd">
                                         <rect key="frame" x="8" y="514" width="358" height="31"/>
@@ -511,6 +526,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Distance" image="directcurrent" catalog="system" id="tFE-HY-m4R"/>
+                    <connections>
+                        <outlet property="FootText" destination="yni-2l-f0H" id="ggL-NB-zIJ"/>
+                        <outlet property="KilometreText" destination="PPP-D5-Kks" id="kUE-Fd-s3q"/>
+                        <outlet property="MetreText" destination="Xe3-Jb-2TV" id="1hc-v8-CwG"/>
+                        <outlet property="MileText" destination="UmM-ub-vD1" id="ZHA-IC-S1k"/>
+                        <outlet property="YardText" destination="VZD-PK-iw0" id="gnI-tk-Ba5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abk-iU-g58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
